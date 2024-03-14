@@ -15,8 +15,16 @@
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>
+        <!-- 覆写SpringBoot父工程提供的版本号 -->
+        <elasticsearch.version>7.12.1</elasticsearch.version>
     </properties>
     <dependencies>
+        <!-- 依赖坐标 -->
+        <dependency>
+            <groupId>org.elasticsearch.client</groupId>
+            <artifactId>elasticsearch-rest-high-level-client</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
